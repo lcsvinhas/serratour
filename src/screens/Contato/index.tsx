@@ -1,4 +1,4 @@
-import { View, Text, Alert, TouchableOpacity, TextInput } from 'react-native'
+import { View, Text, Alert, TouchableOpacity, TextInput, KeyboardAvoidingView } from 'react-native'
 import { styles } from './styles'
 import { useState } from 'react'
 
@@ -22,7 +22,7 @@ export default function Contato() {
     }
 
     return (
-        <View style={styles.container}>
+        <KeyboardAvoidingView behavior={'padding'} style={styles.container}> 
             <Text style={styles.titulo}>Entre em Contato</Text>
 
             <TextInput
@@ -44,6 +44,6 @@ export default function Contato() {
             <TouchableOpacity style={styles.botao} onPress={handleSave}>
                 <Text style={styles.botaoTexto}>Enviar</Text>
             </TouchableOpacity>
-        </View>
+        </KeyboardAvoidingView>
     )
 }
