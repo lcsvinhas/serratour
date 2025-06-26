@@ -4,7 +4,7 @@ import Contato from '../screens/Contato'
 import Quem_somos from '../screens/Quem_somos'
 import Pontos_turisticos from '../screens/Pontos_turisticos'
 import { createBottomTabNavigator } from '@react-navigation/bottom-tabs'
-import { global } from '../styles/global'
+import { cores } from '../styles/cores'
 import { Feather } from '@expo/vector-icons'
 
 const Tab = createBottomTabNavigator()
@@ -14,8 +14,8 @@ export default function AppRouter() {
         <Tab.Navigator
             screenOptions={{
                 headerShown: false,
-                tabBarActiveTintColor: global.primaria,
-                tabBarInactiveTintColor: global.secundaria,
+                tabBarActiveTintColor: cores.primaria,
+                tabBarInactiveTintColor: cores.secundaria,
             }}>
             <Tab.Screen name='Home' component={Home} options={{
                 tabBarIcon: ({ color, size }) => {

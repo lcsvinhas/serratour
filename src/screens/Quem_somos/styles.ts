@@ -1,10 +1,10 @@
 import { StyleSheet } from 'react-native'
-import { global } from '../../styles/global'
+import { cores } from '../../styles/cores'
 
 export const styles = StyleSheet.create({
   container: {
     padding: 20,
-    backgroundColor: global.fundo,
+    backgroundColor: cores.fundo,
   },
   logo: {
     width: 120,
@@ -18,20 +18,20 @@ export const styles = StyleSheet.create({
     fontWeight: 'bold',
     marginBottom: 15,
     textAlign: 'center',
-    color: global.primaria,
+    color: cores.primaria,
   },
   paragrafo: {
     fontSize: 16,
     lineHeight: 22,
     marginBottom: 12,
     marginRight: 30,
-    color: global.terciaria,
+    color: cores.terciaria,
     textAlign: 'justify',
   },
   rodape: {
     marginTop: 30,
     fontSize: 14,
-    color: global.secundaria,
+    color: cores.secundaria,
     textAlign: 'center',
   },
   paragrafoContainer: {

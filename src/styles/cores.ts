@@ -1,4 +1,4 @@
-export const global = {
+export const cores = {
     primaria: '#6371BF',
     secundaria: '#A3BAD9',
     terciaria: '#7E8C5E',

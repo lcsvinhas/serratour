@@ -1,10 +1,10 @@
 import { StyleSheet } from 'react-native'
-import { global } from '../../styles/global'
+import { cores } from '../../styles/cores'
 
 export const styles = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: global.fundo,
+    backgroundColor: cores.fundo,
   },
   titulo: {
     fontSize: 24,
@@ -13,7 +13,7 @@ export const styles = StyleSheet.create({
     textAlign: 'left',
     paddingLeft: 20,
     paddingRight: 20,
-    color: global.primaria,
+    color: cores.primaria,
   },
   banner: {
     width: '100%',
@@ -26,10 +26,10 @@ export const styles = StyleSheet.create({
     marginBottom: 12,
     paddingLeft: 20,
     paddingRight: 20,
-    color: global.texto,
+    color: cores.texto,
   },
   botao: {
-    backgroundColor: global.primaria,
+    backgroundColor: cores.primaria,
     padding: 14,
     borderRadius: 10,
     alignItems: 'center',
@@ -38,7 +38,7 @@ export const styles = StyleSheet.create({
     marginRight: 20
   },
   botaoSecundario: {
-    backgroundColor: global.secundaria,
+    backgroundColor: cores.secundaria,
     padding: 14,
     borderRadius: 10,
     alignItems: 'center',
@@ -48,8 +48,16 @@ export const styles = StyleSheet.create({
     marginRight: 20
   },
   textoBotao: {
-    color: global.fundo,
+    color: cores.fundo,
     fontSize: 16,
-    fontWeight: 'bold',
+    fontWeight: 'bold'
+  },
+  climaTexto: {
+    fontSize: 18,
+    textAlign: 'center',
+    fontWeight: '500',
+    marginBottom: 16,
+    marginTop: 40,
+    letterSpacing: 2
   }
 })

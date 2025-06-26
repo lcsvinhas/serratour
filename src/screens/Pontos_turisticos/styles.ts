@@ -1,15 +1,15 @@
 import { StyleSheet } from 'react-native'
-import { global } from '../../styles/global'
+import { cores } from '../../styles/cores'
 
 export const styles = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: global.fundo,
+    backgroundColor: cores.fundo,
     padding: 20,
   },
   card: {
     alignItems: 'center',
-    backgroundColor: global.gaveta,
+    backgroundColor: cores.gaveta,
     borderRadius: 12,
     marginBottom: 20,
     padding: 12,
@@ -25,12 +25,12 @@ export const styles = StyleSheet.create({
     fontSize: 18,
     fontWeight: 'bold',
     textAlign: 'center',
-    color: global.primaria,
+    color: cores.primaria,
   },
   localidade: {
     fontSize: 16,
     textAlign: 'center',
-    color: global.terciaria,
+    color: cores.terciaria,
   },
   modalOverlay: {
     flex: 1,
@@ -39,7 +39,7 @@ export const styles = StyleSheet.create({
     alignItems: 'center',
   },
   modalContainer: {
-    backgroundColor: global.fundo,
+    backgroundColor: cores.fundo,
     borderRadius: 12,
     padding: 20,
     width: '85%',
@@ -50,21 +50,21 @@ export const styles = StyleSheet.create({
     fontWeight: 'bold',
     marginBottom: 10,
     textAlign: 'center',
-    color: global.primaria,
+    color: cores.primaria,
   },
   modalTexto: {
     fontSize: 16,
-    color: global.terciaria,
+    color: cores.terciaria,
     marginBottom: 20,
     textAlign: 'justify',
   },
   modalBotao: {
-    backgroundColor: global.primaria,
+    backgroundColor: cores.primaria,
     paddingVertical: 10,
     borderRadius: 8,
   },
   modalBotaoTexto: {
-    color: global.fundo,
+    color: cores.fundo,
     textAlign: 'center',
     fontWeight: 'bold',
   }
